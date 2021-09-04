@@ -38,7 +38,7 @@ public class CallableDemo {
 
 		System.out.println(Thread.currentThread().getName() + "----计算完成----");
 
-		// get方法放到最后
+		// get方法放到最后，会阻塞直到返回结果，所以建议放到最后一行
 		System.out.println(futureTask.get());
 	}
 

@@ -28,7 +28,7 @@ public class MyThreadPoolDemo {
 		// initPool();
 
 		// 通过ThreadPoolExecutor的方式来创建线程池
-		// 其中maximumPoolSize设置的规则是：
+		// 其中maximumPoolSize设置的规则是：Classloader
 		// 如果是CPU密集型 就是 线程数= CPU核数+1
 		// 如果是IO密集型 就是 线程数= CPU核心数 / (1-阻塞系数)
 		// 		这个阻塞系数一般为0.8~0.9之间，也可以取0.8或者0.9。
